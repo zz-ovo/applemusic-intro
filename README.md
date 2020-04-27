@@ -9,4 +9,4 @@ figma로 만든 applemusic-intro 연습</br>
 
 
 zepline으로 옮겨서 applemusic-intro coding 연습</br>
-https://zz-ovo.github.io/applemusic-intro/applemusic.html
+[index](https://zz-ovo.github.io/applemusic-intro/applemusic.html)
