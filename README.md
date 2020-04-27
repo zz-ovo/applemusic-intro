@@ -9,5 +9,4 @@ https://www.figma.com/proto/7l0N9W5mb301sgEsvPbaYg/apple-music-intro?node-id=1%3
 </br>
 
 zepline으로 옮겨서 applemusic-intro coding 연습
-
 https://zz-ovo.github.io/applemusic-intro/applemusic.html
