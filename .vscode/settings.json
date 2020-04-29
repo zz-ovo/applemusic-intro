@@ -1,0 +1,5 @@
+{
+    "color-highlight.matchWords": true,
+    "bracketPairColorizer.forceIterationColorCycle": true,
+    "bracketPairColorizer.forceUniqueOpeningColor": true
+}
