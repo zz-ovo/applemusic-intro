@@ -136,7 +136,6 @@
     height: 64px;
     background: rgba(241, 241, 241, 0.8);
     backdrop-filter: saturate(180%) blur(5px);
-    
     font-weight: normal;
 }
 .playM .row{
@@ -171,31 +170,30 @@
 }
 
 /* nav */
+
 nav{
     position: fixed;
-    left: 0;bottom: 0;
-    z-index:9000;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
     width:100%;
-    height:82px;
-    background: #000;
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 -0.5px 0 0 rgba(0, 0, 0, 0.3);
-    background-color: rgba(249, 249, 249, 0.94);
+    background-color: rgba(249, 249, 249, 1);
 }
 
-.nav ul{
+nav .container ul{
     margin-top: 10px;
     display: flex;
-    justify-content: space-around;
-    text-align: center;
+    align-items: center;
+    justify-content:space-around;
+    height:82px;
+
+    
 }
 
-.nav ul li:first-of-type span{color:#007aff;}
+nav ul li:first-of-type span{color:#007aff;}
 
-.nav ul li a span{
+nav ul li a span{
     display: block;
-    width:100%;
     font-size: 10px;
     color:#999;
     line-height: 1;
