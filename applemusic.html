@@ -45,7 +45,6 @@
                 <div class="header-id">w</div>
             </div>
         </div>
-      
     </header>
     <!-- //header -->
    
@@ -61,18 +60,54 @@
                             <h2 class="bt-title">Travis Mills</h2>
                             <p class="bt-desc">L.A’s pop culture authority</p>
                         </div>
-                        <picture>
-                            <source srcset="assets/img/bestM01@3x.jpg" media="(min-width: 800px)">
-                            <source srcset="assets/img/bestM01@2x.jpg" media="(min-width: 600px)">
-                            <!-- 화면 미디어 쿼리가 800px이상일 경우 3배 해상도 이미지를 나타나게 해주세욘 -->
-                            <img src="assets/img/bestM01.jpg" srcset="assets/img/bestM01.jpg 1x, assets/img/bestM01@2x.jpg 2x, assets/img/bestM01@3x.jpg 3x" alt="베스트뮤직이미지01">
-                           <!-- 기본 이미지는 img src사용하고 기기해상도에 맞추는건 srcset 설정해주기-->
-                        </picture>
+                        <div class="swiper-best">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <picture >
+                                        <source srcset="assets/img/bestM01@3x.jpg" media="(min-width: 800px)">
+                                        <source srcset="assets/img/bestM01@2x.jpg" media="(min-width: 600px)">
+                                        <!-- 화면 미디어 쿼리가 800px이상일 경우 3배 해상도 이미지를 나타나게 하기 -->
+                                        <img src="assets/img/bestM01.jpg" srcset="assets/img/bestM01.jpg 1x, assets/img/bestM01@2x.jpg 2x, assets/img/bestM01@3x.jpg 3x" alt="베스트뮤직이미지01">
+                                        <!-- 기본 이미지는 img src사용하고 기기해상도에 맞추는건 srcset 설정해주기-->
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <source srcset="assets/img/bestM02@3x.jpg" media="(min-width: 800px)">
+                                        <source srcset="assets/img/bestM02@2x.jpg" media="(min-width: 600px)">
+                                        <!-- 화면 미디어 쿼리가 800px이상일 경우 3배 해상도 이미지를 나타나게 하기 -->
+                                        <img src="assets/img/bestM02.jpg" srcset="assets/img/bestM02.jpg 1x, assets/img/bestM02@2x.jpg 2x, assets/img/bestM02@3x.jpg 3x" alt="베스트뮤직이미지01">
+                                        <!-- 기본 이미지는 img src사용하고 기기해상도에 맞추는건 srcset 설정해주기-->
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <source srcset="assets/img/bestM03@3x.jpg" media="(min-width: 800px)">
+                                        <source srcset="assets/img/bestM03@2x.jpg" media="(min-width: 600px)">
+                                        <!-- 화면 미디어 쿼리가 800px이상일 경우 3배 해상도 이미지를 나타나게 하기 -->
+                                        <img src="assets/img/bestM03.jpg" srcset="assets/img/bestM03.jpg 1x, assets/img/bestM03@2x.jpg 2x, assets/img/bestM03@3x.jpg 3x" alt="베스트뮤직이미지01">
+                                        <!-- 기본 이미지는 img src사용하고 기기해상도에 맞추는건 srcset 설정해주기-->
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <source srcset="assets/img/bestM04@3x.jpg" media="(min-width: 800px)">
+                                        <source srcset="assets/img/bestM04@2x.jpg" media="(min-width: 600px)">
+                                        <img src="assets/img/bestM04.jpg" srcset="assets/img/bestM04.jpg 1x, assets/img/bestM04@2x.jpg 2x, assets/img/bestM04@3x.jpg 3x" alt="베스트뮤직이미지04">
+                                    </picture>
+                                </div> 
+                            </div>
+                         </div>
                     </div>
                 </div>
             </div>
         </article>
-        <script></script>
+        <script>
+               var swiper = new Swiper('.swiper-best',{
+                spaceBetween:10,
+                slidesPerView:1,
+               });
+        </script>
         <!-- bestM end-->
         <article class="recentM">
             <div class="container">
@@ -110,81 +145,167 @@
             <div class="container">
                 <div class="row">
                     <h2>다음프로그램</h2>
-                    <div class="next-wrap">
-                        <div class="next">
-                            <div class="next-img">
-                                <picture>
-                                    <source srcset="assets/img/next01@3x.jpg" media="(min-width: 800px)">
-                                    <source srcset="assets/img/next01@2x.jpg" media="(min-width: 600px)">
-                                    <img src="assets/img/next01.jpg" srcset="assets/img/next01.jpg 1x, assets/img/next01@2x.jpg 2x, assets/img/next01@3x.jpg 3x" alt="베스트뮤직이미지01">
-                                </picture>
+                    <div class="swiper-next">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="next-wrap">
+                                    <div class="next">
+                                        <div class="next-img">
+                                            <picture>
+                                                <source srcset="assets/img/next01@3x.jpg" media="(min-width: 800px)">
+                                                <source srcset="assets/img/next01@2x.jpg" media="(min-width: 600px)">
+                                                <img src="assets/img/next01.jpg" srcset="assets/img/next01.jpg 1x, assets/img/next01@2x.jpg 2x, assets/img/next01@3x.jpg 3x" alt="베스트뮤직이미지01">
+                                            </picture>
+                                        </div>
+                                        <div class="next-title">
+                                            <span class="nt-stitle">BEATS 1 ON AIR</span>
+                                            <h3 class="nt-title">BEATS 1 ON AIR</h3>
+                                            <p class="nt-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lectus nisl songs ”should I like whatever”.</p>
+                                        </div>
+                                    </div>
+                                    <div class="next">
+                                        <div class="next-img">
+                                            <picture>
+                                                <source srcset="assets/img/next02@3x.jpg" media="(min-width: 800px)">
+                                                <source srcset="assets/img/next02@2x.jpg" media="(min-width: 600px)">
+                                                <img src="assets/img/next02.jpg" srcset="assets/img/next02.jpg 1x, assets/img/next02@2x.jpg 2x, assets/img/next02@3x.jpg 3x" alt="베스트뮤직이미지01">
+                                            </picture>
+                                        </div>
+                                        <div class="next-title">
+                                            <span class="nt-stitle">BEATS 1 ON AIR</span>
+                                            <h3 class="nt-title">BEATS 1 ON AIR</h3>
+                                            <p class="nt-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, quae qui rerum corporis ea soluta maxime nihil eaque repellendus ab accusamus vitae aliquid sequi ullam consequuntur. Temporibus fugit minima dicta?</p>
+                                        </div>
+                                    </div>
+                                    <div class="next">
+                                        <div class="next-img">
+                                            <picture>
+                                                <source srcset="assets/img/next03@3x.jpg" media="(min-width: 800px)">
+                                                <source srcset="assets/img/next03@2x.jpg" media="(min-width: 600px)">
+                                                <img src="assets/img/next03.jpg" srcset="assets/img/next03.jpg 1x, assets/img/next03@2x.jpg 2x, assets/img/next03@3x.jpg 3x" alt="베스트뮤직이미지01">
+                                            </picture>
+                                        </div>
+                                        <div class="next-title">
+                                            <span class="nt-stitle">BEATS 1 ON AIR</span>
+                                            <h3 class="nt-title">BEATS 1 ON AIR</h3>
+                                            <p class="nt-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lectus nisl songs ”should I like whatever”.</p>
+                                        </div>
+                                    </div>
+                                    <div class="next">
+                                        <div class="next-img">
+                                            <picture>
+                                                <source srcset="assets/img/next04@3x.jpg" media="(min-width: 800px)">
+                                                <source srcset="assets/img/next04@2x.jpg" media="(min-width: 600px)">
+                                                <img src="assets/img/next04.jpg" srcset="assets/img/next04.jpg 1x, assets/img/next04@2x.jpg 2x, assets/img/next04@3x.jpg 3x" alt="베스트뮤직이미지01">
+                                            </picture>
+                                        </div>
+                                        <div class="next-title">
+                                            <span class="nt-stitle">BEATS 1 ON AIR</span>
+                                            <h3 class="nt-title">BEATS 1 ON AIR</h3>
+                                            <p class="nt-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lectus nisl songs ”should I like whatever”.</p>
+                                        </div>
+                                    </div>
+                                    <div class="next">
+                                        <div class="next-img">
+                                            <picture>
+                                                <source srcset="assets/img/next05@3x.jpg" media="(min-width: 800px)">
+                                                <source srcset="assets/img/next05@2x.jpg" media="(min-width: 600px)">
+                                                <img src="assets/img/next05.jpg" srcset="assets/img/next05.jpg 1x, assets/img/next05@2x.jpg 2x, assets/img/next05@3x.jpg 3x" alt="베스트뮤직이미지01">
+                                            </picture>
+                                        </div>
+                                        <div class="next-title">
+                                            <span class="nt-stitle">BEATS 1 ON AIR</span>
+                                            <h3 class="nt-title">BEATS 1 ON AIR</h3>
+                                            <p class="nt-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lectus nisl songs ”should I like whatever”.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="next-title">
-                                <span class="nt-stitle">BEATS 1 ON AIR</span>
-                                <h3 class="nt-title">BEATS 1 ON AIR</h3>
-                                <p class="nt-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lectus nisl songs ”should I like whatever”.</p>
-                            </div>
-                        </div>
-                        <div class="next">
-                            <div class="next-img">
-                                <picture>
-                                    <source srcset="assets/img/next02@3x.jpg" media="(min-width: 800px)">
-                                    <source srcset="assets/img/next02@2x.jpg" media="(min-width: 600px)">
-                                    <img src="assets/img/next02.jpg" srcset="assets/img/next02.jpg 1x, assets/img/next02@2x.jpg 2x, assets/img/next02@3x.jpg 3x" alt="베스트뮤직이미지01">
-                                </picture>
-                            </div>
-                            <div class="next-title">
-                                <span class="nt-stitle">BEATS 1 ON AIR</span>
-                                <h3 class="nt-title">BEATS 1 ON AIR</h3>
-                                <p class="nt-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, quae qui rerum corporis ea soluta maxime nihil eaque repellendus ab accusamus vitae aliquid sequi ullam consequuntur. Temporibus fugit minima dicta?</p>
-                            </div>
-                        </div>
-                        <div class="next">
-                            <div class="next-img">
-                                <picture>
-                                    <source srcset="assets/img/next03@3x.jpg" media="(min-width: 800px)">
-                                    <source srcset="assets/img/next03@2x.jpg" media="(min-width: 600px)">
-                                    <img src="assets/img/next03.jpg" srcset="assets/img/next03.jpg 1x, assets/img/next03@2x.jpg 2x, assets/img/next03@3x.jpg 3x" alt="베스트뮤직이미지01">
-                                </picture>
-                            </div>
-                            <div class="next-title">
-                                <span class="nt-stitle">BEATS 1 ON AIR</span>
-                                <h3 class="nt-title">BEATS 1 ON AIR</h3>
-                                <p class="nt-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lectus nisl songs ”should I like whatever”.</p>
-                            </div>
-                        </div>
-                        <div class="next">
-                            <div class="next-img">
-                                <picture>
-                                    <source srcset="assets/img/next04@3x.jpg" media="(min-width: 800px)">
-                                    <source srcset="assets/img/next04@2x.jpg" media="(min-width: 600px)">
-                                    <img src="assets/img/next04.jpg" srcset="assets/img/next04.jpg 1x, assets/img/next04@2x.jpg 2x, assets/img/next04@3x.jpg 3x" alt="베스트뮤직이미지01">
-                                </picture>
-                            </div>
-                            <div class="next-title">
-                                <span class="nt-stitle">BEATS 1 ON AIR</span>
-                                <h3 class="nt-title">BEATS 1 ON AIR</h3>
-                                <p class="nt-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lectus nisl songs ”should I like whatever”.</p>
-                            </div>
-                        </div>
-                        <div class="next">
-                            <div class="next-img">
-                                <picture>
-                                    <source srcset="assets/img/next05@3x.jpg" media="(min-width: 800px)">
-                                    <source srcset="assets/img/next51@2x.jpg" media="(min-width: 600px)">
-                                    <img src="assets/img/next05.jpg" srcset="assets/img/next05.jpg 1x, assets/img/next05@2x.jpg 2x, assets/img/next05@3x.jpg 3x" alt="베스트뮤직이미지01">
-                                </picture>
-                            </div>
-                            <div class="next-title">
-                                <span class="nt-stitle">BEATS 1 ON AIR</span>
-                                <h3 class="nt-title">BEATS 1 ON AIR</h3>
-                                <p class="nt-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lectus nisl songs ”should I like whatever”.</p>
+                            <div class="swiper-slide">
+                                <div class="next-wrap">
+                                    <div class="next">
+                                        <div class="next-img">
+                                            <picture>
+                                                <source srcset="assets/img/next06@3x.jpg" media="(min-width: 800px)">
+                                                <source srcset="assets/img/next06@2x.jpg" media="(min-width: 600px)">
+                                                <img src="assets/img/next06.jpg" srcset="assets/img/next06.jpg 1x, assets/img/next06@2x.jpg 2x, assets/img/next06@3x.jpg 3x" alt="베스트뮤직이미지06">
+                                            </picture>
+                                        </div>
+                                        <div class="next-title">
+                                            <span class="nt-stitle">BEATS 1 ON AIR</span>
+                                            <h3 class="nt-title">BEATS 1 ON AIR</h3>
+                                            <p class="nt-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lectus nisl songs ”should I like whatever”.</p>
+                                        </div>
+                                    </div>
+                                    <div class="next">
+                                        <div class="next-img">
+                                            <picture>
+                                                <source srcset="assets/img/next07@3x.jpg" media="(min-width: 800px)">
+                                                <source srcset="assets/img/next07@2x.jpg" media="(min-width: 600px)">
+                                                <img src="assets/img/next07.jpg" srcset="assets/img/next07.jpg 1x, assets/img/next07@2x.jpg 2x, assets/img/next07@3x.jpg 3x" alt="베스트뮤직이미지07">
+                                            </picture>
+                                        </div>
+                                        <div class="next-title">
+                                            <span class="nt-stitle">BEATS 1 ON AIR</span>
+                                            <h3 class="nt-title">BEATS 1 ON AIR</h3>
+                                            <p class="nt-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, quae qui rerum corporis ea soluta maxime nihil eaque repellendus ab accusamus vitae aliquid sequi ullam consequuntur. Temporibus fugit minima dicta?</p>
+                                        </div>
+                                    </div>
+                                    <div class="next">
+                                        <div class="next-img">
+                                            <picture>
+                                                <source srcset="assets/img/next08@3x.jpg" media="(min-width: 800px)">
+                                                <source srcset="assets/img/next08@2x.jpg" media="(min-width: 600px)">
+                                                <img src="assets/img/next08.jpg" srcset="assets/img/next08.jpg 1x, assets/img/next08@2x.jpg 2x, assets/img/next08@3x.jpg 3x" alt="베스트뮤직이미지08">
+                                            </picture>
+                                        </div>
+                                        <div class="next-title">
+                                            <span class="nt-stitle">BEATS 1 ON AIR</span>
+                                            <h3 class="nt-title">BEATS 1 ON AIR</h3>
+                                            <p class="nt-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lectus nisl songs ”should I like whatever”.</p>
+                                        </div>
+                                    </div>
+                                    <div class="next">
+                                        <div class="next-img">
+                                            <picture>
+                                                <source srcset="assets/img/next09@3x.jpg" media="(min-width: 800px)">
+                                                <source srcset="assets/img/next09@2x.jpg" media="(min-width: 600px)">
+                                                <img src="assets/img/next09.jpg" srcset="assets/img/next09.jpg 1x, assets/img/next09@2x.jpg 2x, assets/img/next09@3x.jpg 3x" alt="베스트뮤직이미지09">
+                                            </picture>
+                                        </div>
+                                        <div class="next-title">
+                                            <span class="nt-stitle">BEATS 1 ON AIR</span>
+                                            <h3 class="nt-title">BEATS 1 ON AIR</h3>
+                                            <p class="nt-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lectus nisl songs ”should I like whatever”.</p>
+                                        </div>
+                                    </div>
+                                    <div class="next">
+                                        <div class="next-img">
+                                            <picture>
+                                                <source srcset="assets/img/next10@3x.jpg" media="(min-width: 800px)">
+                                                <source srcset="assets/img/next10@2x.jpg" media="(min-width: 600px)">
+                                                <img src="assets/img/next10.jpg" srcset="assets/img/next10.jpg 1x, assets/img/next10@2x.jpg 2x, assets/img/next10@3x.jpg 3x" alt="베스트뮤직이미지10">
+                                            </picture>
+                                        </div>
+                                        <div class="next-title">
+                                            <span class="nt-stitle">BEATS 1 ON AIR</span>
+                                            <h3 class="nt-title">BEATS 1 ON AIR</h3>
+                                            <p class="nt-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lectus nisl songs ”should I like whatever”.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </article>
+        <script>
+           var swiper = new Swiper('.swiper-next',{
+                spaceBetween:10,
+                slidesPerView:1,
+               }); 
+        </script>
         <!-- nextM end-->      
     </section>
 </main>
@@ -194,9 +315,9 @@
             <div class="row">
         <div class="play-img">
             <picture>
-                <source srcset="assets/img/Rectangle 19@3x.jpg" media="(min-width: 800px)">
-                <source srcset="assets/img/Rectangle 19@2x.jpg" media="(min-width: 600px)">
-                <img src="assets/img/Rectangle 19.jpg" srcset="assets/img/Rectangle 195.jpg 1x, assets/img/Rectangle 19@2x.jpg 2x, assets/img/Rectangle 19@3x.jpg 3x" alt="베스트뮤직이미지01">
+                <source srcset="assets/img/Rectangle19@3x.jpg" media="(min-width: 800px)">
+                <source srcset="assets/img/Rectangle19@2x.jpg" media="(min-width: 600px)">
+                <img src="assets/img/Rectangle19.jpg" srcset="assets/img/Rectangle19.jpg 1x, assets/img/Rectangle19@2x.jpg 2x, assets/img/Rectangle19@3x.jpg 3x" alt="베스트뮤직이미지01">
             </picture>
         </div>
         <div class="play-title">
@@ -220,64 +341,64 @@
     </section>
     <!-- //play -->
     <nav>
-     <div class="container">
-        <ul>
-            <li>
-                <a href="#">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22 3H10V4.813H22V3Z" fill="#007AFF"/>
-                        <path d="M24 6H8V8H24V6Z" fill="#007AFF"/>
-                        <path d="M26 9H6V29H26V9Z" fill="#007AFF"/>
-                        <path d="M13.7784 23.8435C14.976 23.444 15.7042 22.3927 15.4049 21.4953C15.1055 20.5978 13.892 20.1941 12.6944 20.5936C11.4967 20.9931 10.7685 22.0444 11.0679 22.9418C11.3672 23.8393 12.5807 24.243 13.7784 23.8435Z" fill="white"/>
-                        <path d="M15.479 14H15V22H15.479V14Z" fill="white"/>
-                        <path d="M19.571 15.585L15 17V13.7L19.571 12.286V15.585Z" fill="white"/>
-                        </svg>
-                    <span>보관함</span>
-                </a>
-            </li>
-            <li><a href="#">
-                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16.2 26.958L5.834 15.556C3.499 12.988 3.688 9.01302 6.257 6.67802C8.826 4.34202 12.801 4.53202 15.136 7.10002L16.2 8.27002L17.263 7.10002C19.598 4.53102 23.573 4.34102 26.142 6.67802C28.711 9.01302 28.901 12.988 26.565 15.556L16.2 26.958Z" fill="#939395"/>
-                    </svg> 
-                    <span>For You</span>                   
-            </a></li>
-            <li><a href="#">               
-                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11.0785 27.772C13.2757 27.3384 14.7859 25.6139 14.4517 23.92C14.1174 22.2262 12.0653 21.2046 9.8681 21.6382C7.67091 22.0717 6.16069 23.7963 6.49493 25.4901C6.82917 27.184 8.8813 28.2056 11.0785 27.772Z" fill="#939395"/>
-                <path d="M23.0209 25.2569C25.2058 24.7653 26.6696 23.0009 26.2906 21.3161C25.9115 19.6312 23.833 18.6639 21.6481 19.1555C19.4633 19.647 17.9994 21.4114 18.3785 23.0962C18.7575 24.7811 20.836 25.7484 23.0209 25.2569Z" fill="#939395"/>
-                <path d="M14.47 6.625H13.222V24.093H14.47V6.625Z" fill="#939395"/>
-                <path d="M26.323 4.13H25.076V21.597H26.323V4.13Z" fill="#939395"/>
-                <path d="M13.222 6.625L25.699 4.13V9.12101L13.846 12.24L13.222 6.625Z" fill="#939395"/>
-                </svg>
-                <span>둘러보기</span>
-            </a></li>
-            <li><a href="#">
-                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11.233 23.695C8.77997 22.016 7.17197 19.197 7.17197 16C7.17197 12.939 8.65197 10.231 10.932 8.53101" stroke="#939395" stroke-width="1.9291" stroke-miterlimit="10" stroke-linecap="round"/>
-                    <path d="M8.62696 5.43994C5.40796 7.84394 3.31296 11.6739 3.31296 15.9999C3.31296 20.5199 5.58896 24.5049 9.05596 26.8799" stroke="#939395" stroke-width="1.9291" stroke-miterlimit="10" stroke-linecap="round"/>
-                    <path d="M21.759 8.30505C24.209 9.98605 25.821 12.8051 25.821 16.0001C25.821 19.0611 24.341 21.7701 22.061 23.4691" stroke="#939395" stroke-width="1.9291" stroke-miterlimit="10" stroke-linecap="round"/>
-                    <path d="M24.363 26.561C27.584 24.157 29.677 20.328 29.677 16C29.677 11.481 27.402 7.496 23.935 5.12" stroke="#939395" stroke-width="1.9291" stroke-miterlimit="10" stroke-linecap="round"/>
-                    <path d="M13.41 20.5119C11.972 19.5269 11.029 17.8739 11.029 15.9999C11.029 14.2069 11.897 12.6189 13.232 11.6219" stroke="#939395" stroke-width="1.9291" stroke-miterlimit="10" stroke-linecap="round"/>
-                    <path d="M10.932 8.53101C8.65297 10.231 7.17197 12.939 7.17197 16C7.17197 19.197 8.77997 22.016 11.234 23.695" stroke="#939395" stroke-width="1.9291" stroke-miterlimit="10" stroke-linecap="round"/>
-                    <path d="M25.82 16.0001C25.82 12.8051 24.209 9.98505 21.758 8.30505" stroke="#939395" stroke-width="1.9291" stroke-miterlimit="10" stroke-linecap="round"/>
-                    <path d="M19.58 11.49C21.018 12.474 21.962 14.127 21.962 16C21.962 17.795 21.093 19.383 19.758 20.379" stroke="#939395" stroke-width="1.9291" stroke-miterlimit="10" stroke-linecap="round"/>
-                    <path d="M19.758 20.379C21.093 19.383 21.962 17.795 21.962 16C21.962 14.127 21.018 12.475 19.58 11.49" stroke="#939395" stroke-width="1.9291" stroke-miterlimit="10" stroke-linecap="round"/>
-                    <path d="M13.232 11.6219C11.897 12.6189 11.029 14.2069 11.029 15.9999C11.029 17.8739 11.972 19.5259 13.41 20.5119" stroke="#939395" stroke-width="1.9291" stroke-miterlimit="10" stroke-linecap="round"/>
-                    <path d="M16.4959 18.1181C17.5619 18.1181 18.4259 17.254 18.4259 16.1881C18.4259 15.1221 17.5619 14.2581 16.4959 14.2581C15.43 14.2581 14.5659 15.1221 14.5659 16.1881C14.5659 17.254 15.43 18.1181 16.4959 18.1181Z" fill="#939395"/>
-                </svg>
-                <span>라디오</span>
-            </a></li>
-            <li>
-                <a href="#">     
+         <div class="container">
+            <ul>
+                <li>
+                    <a href="#">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 3H10V4.813H22V3Z" fill="#007AFF"/>
+                            <path d="M24 6H8V8H24V6Z" fill="#007AFF"/>
+                            <path d="M26 9H6V29H26V9Z" fill="#007AFF"/>
+                            <path d="M13.7784 23.8435C14.976 23.444 15.7042 22.3927 15.4049 21.4953C15.1055 20.5978 13.892 20.1941 12.6944 20.5936C11.4967 20.9931 10.7685 22.0444 11.0679 22.9418C11.3672 23.8393 12.5807 24.243 13.7784 23.8435Z" fill="white"/>
+                            <path d="M15.479 14H15V22H15.479V14Z" fill="white"/>
+                            <path d="M19.571 15.585L15 17V13.7L19.571 12.286V15.585Z" fill="white"/>
+                            </svg>
+                        <span>보관함</span>
+                    </a>
+                </li>
+                <li><a href="#">
                     <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14.8131 21.927C19.4025 21.927 23.1231 18.2065 23.1231 13.617C23.1231 9.02752 19.4025 5.30701 14.8131 5.30701C10.2236 5.30701 6.50305 9.02752 6.50305 13.617C6.50305 18.2065 10.2236 21.927 14.8131 21.927Z" stroke="#939393" stroke-width="2.2" stroke-miterlimit="10"/>
-                    <path d="M20.497 20.301L26.889 26.693" stroke="#939393" stroke-width="2.2" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M16.2 26.958L5.834 15.556C3.499 12.988 3.688 9.01302 6.257 6.67802C8.826 4.34202 12.801 4.53202 15.136 7.10002L16.2 8.27002L17.263 7.10002C19.598 4.53102 23.573 4.34102 26.142 6.67802C28.711 9.01302 28.901 12.988 26.565 15.556L16.2 26.958Z" fill="#939395"/>
+                        </svg> 
+                        <span>For You</span>                   
+                </a></li>
+                <li><a href="#">               
+                    <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.0785 27.772C13.2757 27.3384 14.7859 25.6139 14.4517 23.92C14.1174 22.2262 12.0653 21.2046 9.8681 21.6382C7.67091 22.0717 6.16069 23.7963 6.49493 25.4901C6.82917 27.184 8.8813 28.2056 11.0785 27.772Z" fill="#939395"/>
+                    <path d="M23.0209 25.2569C25.2058 24.7653 26.6696 23.0009 26.2906 21.3161C25.9115 19.6312 23.833 18.6639 21.6481 19.1555C19.4633 19.647 17.9994 21.4114 18.3785 23.0962C18.7575 24.7811 20.836 25.7484 23.0209 25.2569Z" fill="#939395"/>
+                    <path d="M14.47 6.625H13.222V24.093H14.47V6.625Z" fill="#939395"/>
+                    <path d="M26.323 4.13H25.076V21.597H26.323V4.13Z" fill="#939395"/>
+                    <path d="M13.222 6.625L25.699 4.13V9.12101L13.846 12.24L13.222 6.625Z" fill="#939395"/>
                     </svg>
-                    <span>검색</span>
-                </a>
-            </li>
-        </ul>  
-    </div>  
+                    <span>둘러보기</span>
+                </a></li>
+                <li><a href="#">
+                    <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.233 23.695C8.77997 22.016 7.17197 19.197 7.17197 16C7.17197 12.939 8.65197 10.231 10.932 8.53101" stroke="#939395" stroke-width="1.9291" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M8.62696 5.43994C5.40796 7.84394 3.31296 11.6739 3.31296 15.9999C3.31296 20.5199 5.58896 24.5049 9.05596 26.8799" stroke="#939395" stroke-width="1.9291" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M21.759 8.30505C24.209 9.98605 25.821 12.8051 25.821 16.0001C25.821 19.0611 24.341 21.7701 22.061 23.4691" stroke="#939395" stroke-width="1.9291" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M24.363 26.561C27.584 24.157 29.677 20.328 29.677 16C29.677 11.481 27.402 7.496 23.935 5.12" stroke="#939395" stroke-width="1.9291" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M13.41 20.5119C11.972 19.5269 11.029 17.8739 11.029 15.9999C11.029 14.2069 11.897 12.6189 13.232 11.6219" stroke="#939395" stroke-width="1.9291" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M10.932 8.53101C8.65297 10.231 7.17197 12.939 7.17197 16C7.17197 19.197 8.77997 22.016 11.234 23.695" stroke="#939395" stroke-width="1.9291" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M25.82 16.0001C25.82 12.8051 24.209 9.98505 21.758 8.30505" stroke="#939395" stroke-width="1.9291" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M19.58 11.49C21.018 12.474 21.962 14.127 21.962 16C21.962 17.795 21.093 19.383 19.758 20.379" stroke="#939395" stroke-width="1.9291" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M19.758 20.379C21.093 19.383 21.962 17.795 21.962 16C21.962 14.127 21.018 12.475 19.58 11.49" stroke="#939395" stroke-width="1.9291" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M13.232 11.6219C11.897 12.6189 11.029 14.2069 11.029 15.9999C11.029 17.8739 11.972 19.5259 13.41 20.5119" stroke="#939395" stroke-width="1.9291" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M16.4959 18.1181C17.5619 18.1181 18.4259 17.254 18.4259 16.1881C18.4259 15.1221 17.5619 14.2581 16.4959 14.2581C15.43 14.2581 14.5659 15.1221 14.5659 16.1881C14.5659 17.254 15.43 18.1181 16.4959 18.1181Z" fill="#939395"/>
+                    </svg>
+                    <span>라디오</span>
+                </a></li>
+                <li>
+                    <a href="#">     
+                        <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.8131 21.927C19.4025 21.927 23.1231 18.2065 23.1231 13.617C23.1231 9.02752 19.4025 5.30701 14.8131 5.30701C10.2236 5.30701 6.50305 9.02752 6.50305 13.617C6.50305 18.2065 10.2236 21.927 14.8131 21.927Z" stroke="#939393" stroke-width="2.2" stroke-miterlimit="10"/>
+                        <path d="M20.497 20.301L26.889 26.693" stroke="#939393" stroke-width="2.2" stroke-miterlimit="10" stroke-linecap="round"/>
+                        </svg>
+                        <span>검색</span>
+                    </a>
+                </li>
+            </ul>  
+        </div>  
     </nav>
 </body>
 </html>
